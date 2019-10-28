@@ -5,93 +5,226 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Noah的github.lo</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper-->
-			<div id="wrapper">
+<head>
+	<title>Noah的Github.lo</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<!-- <span href="#contact" class="icon solid fa-envelope"><span>Contact</span></a> -->
-						<a href="https://github.com/masterlina/resume/blob/master/resume.docx?raw=true" class="icon solid" style="top:10px; right:10px;"><img src="images/cropped-104logo-orange.png" style="width:60px; height:60px;"><span>104</span></a>
-					</nav>
+</head>
+<style>
+	.back {
+		background-image:
+		linear-gradient(45deg,rgb(49, 14, 23)5%,rgb(128, 44, 131) 10%,rgb(31, 151, 90));
+	}
+	.demo {
+		margin: 10px;
+		width: 333px;
+		height: 174.98px;
+		text-align: center;
+		position: relative;
+	}
 
-				<!-- Main -->
-					<div id="main">
+	.demo .front {
+		width:333px;
+		z-index: 1;
+		height: 174.98px;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		/* background-color: #000; */
+		background-image: url("assets/css/images/overlay3.svg"),linear-gradient(45deg, #4361c2 5%, #4fa49a 30%, #9dc66b);
+		background-repeat: repeat, no-repeat;
+		color: #fff;
+	}
 
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1>許智盛 Xu Zhi-sheng</h1>
-									<p>學習三個半月專業課程訓練，從基礎前端網頁開發技術，包含HTML、CSS、Bootstrap、Ajax、JScript、jQuery、 API資料串接應用及後端PHP、MySQL資料庫，目前還在自學，希望學會更多的後端技術。</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
-								</a>
-							</article>
+	.demo .behind {
+		width: 0;
+		height: 150px;
+		z-index: 0;
+		position: absolute;
+		left: 150px;
+		top: 0;
+		background-color: #ccc;
+		color: #000;
+	}
+</style>
 
-						<!-- Work -->
-							<article id="work" class="panel">
-								<header>
-									<h2>作品集</h2>
-								</header>
-								<p>
-								</p>
-								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="http://220.128.133.15/s1080222/Coffee/" class="image fit"><img src="images/coffee.png" alt="咖啡莊園"></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="http://220.128.133.15/s1080222/wedding-dress/" class="image fit"><img src="images/wedding-dress.png" alt="婚紗企劃"></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="http://220.128.133.15/s1080222/wellseen/" class="image fit"><img src="images/hospital.png" alt="動物醫院"></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="http://220.128.133.15/s1080222/Vcard/" class="image fit"><img src="images/Vcard.png" alt="名片練習"></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="http://220.128.133.15/s1080222/WhackMole/" class="image fit"><img src="images/WhackMole.png" alt="打地鼠"></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="http://220.128.133.15/s1080222/opendata_API/weather_table.html" class="image fit"><img src="images/weather.png" alt="36H天氣預報"></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-										</div>
-									</div>
-								</section>
-							</article>
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<!-- <header>
+<body class="is-preload">
+
+	<!-- Wrapper-->
+	<div id="wrapper">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="#" class="icon solid fa-home"><span>Home</span></a>
+			<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+			<!-- <span href="#contact" class="icon solid fa-envelope"><span>Contact</span></a> -->
+			<a href="https://github.com/masterlina/resume/blob/master/resume.docx?raw=true" class="icon solid"
+				style="top:10px; right:10px;"><img src="images/cropped-104logo-orange.png"
+					style="width:60px; height:60px;"><span>104</span></a>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Me -->
+			<article id="home" class="panel intro back">
+				<header>
+					<h1>許智盛 Xu Zhi-sheng</h1>
+					<p>學習三個半月專業課程訓練，從基礎前端網頁開發技術，包含HTML、CSS、Bootstrap、Ajax、JScript、jQuery、
+						API資料串接應用及後端PHP、MySQL資料庫，目前還在自學，希望學會更多的後端技術。</p>
+				</header>
+				<a href="#work" class="jumplink pic">
+					<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+					<img src="images/me.jpg" alt="" />
+				</a>
+			</article>
+
+			<!-- Work -->
+			<article id="work" class="panel back" >
+				<header>
+					<h2>作品集</h2>
+				</header>
+				<p>
+				</p>
+				<section>
+					<div class="row">
+						<div class="demo col-4 col-6-medium col-12-small">
+							<div class="front">咖啡莊園</div>
+							<div class="behind">
+								<a href="http://220.128.133.15/s1080222/Coffee/" class="image fit"><img src="images/coffee.png"
+										alt="咖啡莊園"></a>
+							</div>
+						</div>
+						<div class="demo col-4 col-6-medium col-12-small">
+							<div class=" front">婚紗企劃</div>
+							<div class=" behind">
+								<a href="http://220.128.133.15/s1080222/wedding-dress/" class="image fit"><img
+										src="images/wedding-dress.png" alt="婚紗企劃"></a>
+							</div>
+						</div>
+						<div class="demo col-4 col-6-medium col-12-small">
+							<div class=" front">動物醫院</div>
+							<div class=" behind">
+								<a href="http://220.128.133.15/s1080222/wellseen/" class="image fit"><img src="images/hospital.png"
+										alt="動物醫院"></a>
+							</div>
+						</div>
+						<div class="demo col-4 col-6-medium col-12-small">
+							<div class=" front">名片練習</div>
+							<div class=" behind">
+								<a href="http://220.128.133.15/s1080222/Vcard/" class="image fit"><img src="images/Vcard.png"
+										alt="名片練習"></a>
+							</div>
+						</div>
+						<div class="demo col-4 col-6-medium col-12-small">
+							<div class=" front">打地鼠</div>
+							<div class=" behind">
+								<a href="http://220.128.133.15/s1080222/WhackMole/" class="image fit"><img src="images/WhackMole.png"
+										alt="打地鼠"></a>
+							</div>
+						</div>
+						<div class="demo col-4 col-6-medium col-12-small">
+							<div class=" front">API天氣預報</div>
+							<div class=" behind">
+								<a href="http://220.128.133.15/s1080222/opendata_API/weather_table.html" class="image fit"><img
+										src="images/weather.png" alt="36H天氣預報"></a>
+							</div>
+						</div>
+						<!-- <div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+						</div> -->
+					</div>
+					<script type="text/javascript" src="http://static.cnmo-img.com.cn/js/jquery144p.js"></script>
+				</section>
+			</article>
+			<!-- 翻牌特效JQ -->
+			<script>
+				(function ($) {
+					/*
+					====================================================
+					【JQuery外掛】撲克翻牌效果
+					@auther LiuMing
+					@blog http://www.cnblogs.com/dtdxrk/
+					====================================================
+					@front:正面元素
+					@behind:背面元素
+					@direction:方向
+					@dis:距離
+					@mouse: 'enter' 'leave' 判斷滑鼠移入移出
+					@speed: 速度 不填預設速度80 建議不要超過100
+					*/
+					var OverTurnAnimate = function (front, behind, direction, dis, mouse, speed) {
+						/*判斷移入移出*/
+						var $front = (mouse == 'enter') ? front : behind,
+							$behind = (mouse == 'enter') ? behind : front;
+						$front.stop();
+						$behind.stop();
+						if (direction == 'x') {
+							$front.animate({ left: dis / 2, width: 0 }, speed, function () {
+								$front.hide();
+								$behind.show().animate({ left: 0, width: dis }, speed);
+							});
+						} else {
+							$front.animate({ top: dis / 2, height: 0 }, speed, function () {
+								$front.hide();
+								$behind.show().animate({ top: 0, height: dis }, speed);
+							});
+						}
+					};
+					/*
+					@demo
+					$('.demo1').OverTurn(@direction, @speed);
+					@direction(String)必選 'y' || 'x' 方向
+					@speed(Number)可選 速度
+					*/
+					$.fn.OverTurn = function (direction, speed) {
+						/*配置引數*/
+						if (direction != 'x' && direction != 'y') { throw new Error('OverTurn arguments error'); }
+						$.each(this, function () {
+							var $this = $(this),
+								$front = $this.find('.front'),
+								$behind = $this.find('.behind'),
+								dis = (direction == 'x') ? $this.width() : $this.height(),
+								s = Number(speed) || 40;/*預設速度80 建議不要超過100*/
+							$this.mouseenter(function () {
+								OverTurnAnimate($front, $behind, direction, dis, 'enter', s);
+							}).mouseleave(function () {
+								OverTurnAnimate($front, $behind, direction, dis, 'leave', s);
+							});
+						});
+					};
+				})(jQuery);
+				/*外掛引用方法y*/
+				// $('.demo1').OverTurn('y', 100);
+				/*speed不填預設速度80 建議不要超過100*/
+				/*外掛引用方法x*/
+				$('.demo').OverTurn('x');
+			</script>
+
+			<!-- Contact -->
+			<article id="contact" class="panel">
+				<!-- <header>
 									<h2>Contact Me</h2>
 								</header>
 								<form method="post">
@@ -111,29 +244,31 @@
 											</div>
 											<div class="col-12">
 												<input type="submit" value="Send Message" /> -->
-											</div>
-										</div>
-									</div>
-								</form> -->
-							</article>
+		</div>
+	</div>
+	</div>
+	</form>
+	</article>
 
-					</div>
+	</div>
 
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
+	<!-- Footer -->
+	<div id="footer">
+		<ul class="copyright">
+			<li>&copy; Untitled.</li>
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</div>
 
-			</img>
+	</img>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
